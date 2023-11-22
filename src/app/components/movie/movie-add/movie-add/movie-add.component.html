@@ -1,0 +1,35 @@
+<div class="container">
+    <h1 class="mt-3">Add Movies</h1>
+
+    <form #form="ngForm" (ngSubmit)="onFormSubmit()">
+        <div class="mt-1">
+            <div class="mt-1">
+                <label class="form-label">Title</label>
+                <input type="text" id="title" class="form-control" name="title" [(ngModel)]="model.title">
+            </div>
+            <div class="mt-1">
+                <label class="form-label">Description</label>
+                <input type="text" id="description" class="form-control" name="description" [(ngModel)]="model.description">
+            </div>
+            <div class="mt-1">
+                <label class="form-label">Rating</label>
+                <input type="text" id="rating" class="form-control" name="rating" [(ngModel)]="model.rating">
+            </div>
+            <div class="mt-1">
+                <label class="form-label">Image</label>
+                <input type="text" id="image" class="form-control" name="image" [(ngModel)]="model.image">
+            </div>
+            <div class="mt-1">
+                <label class="form-label">Created At</label>
+                <input type="date" id="createdAt" class="form-control" name="createdAt" [(ngModel)]="model.createdAt">                
+            </div>
+            <div class="mt-1">
+                <label class="form-label">Updated At</label>
+                <input type="date" id="updatedAt" class="form-control" name="updatedAt" [(ngModel)]="model.updatedAt">
+            </div>
+            <div class="mt-1">
+                <button class="btn btn-primary" type="Submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
